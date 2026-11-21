@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #A9D2EE;
+    background-image: url("images/MMS171-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1F2933;
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+header {
+    max-width: 57rem;
+    margin: 1.5rem auto;
+}
+
+h1, h2, h3 {
+    font-family: "Lora", Georgia, serif;
+    color: #14532D;
+}
+.site-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+}
+.tagline {
+    margin: 0.25rem 0 0;
+    font-size: 1.25rem;
+    text-align: center;
+    font-style: italic;
+}
+.header-divider {
+    width: 85%;
+    max-width: 45rem;
+    margin: 1.25rem auto 0;
+    border: none;
+    border-top: 4px solid #14532D;
+}
+h2 {
+    margin: 0 0 1rem;
+    font-size: 1.75rem;
+    text-align: center;
+}
+h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.35rem;
+    text-align: left;
+}
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+main > section {
+    margin-bottom: 2.5rem;
+}
+.about-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.75rem;
+    padding: 1.5rem;
+    background-color: #FFF8E7;
+    border: 3px solid #14532D;
+    border-radius: 20px;
+}
+.about-photo {
+    display: block;
+    flex-shrink: 0;
+    width: 14rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #14532D;
+}
+.about-text {
+    flex: 1;
+    min-width: 0;
+}
+.about-text h2 {
+    margin-top: 0;
+    text-align: left;
+}
+.about-text p {
+    margin: 0 0 1rem;
+}
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+.content-box {
+    padding: 1.5rem;
+    background-color: #FFF8E7;
+    border: 3px solid #14532D;
+    border-radius: 20px;
+}
+.content-box h2 {
+    margin-top: 0;
+}
+.content-box ul {
+    padding-left: 2rem;
+    margin: 0;
+}
+.content-box li {
+    margin-bottom: 0.15rem;
+}
+.content-box ul ul {
+    padding-left: 2rem;
+}
+#projects article {
+    margin-bottom: 1rem;
+}
+#projects article:last-child {
+    margin-bottom: 0;
+}
+#projects article h3 {
+    margin: 0 0 0.25rem;
+}
+#projects article p {
+    margin: 0;
+}
+#contact p {
+    margin: 0 0 0.5rem;
+}
+
+#contact p:last-child {
+    margin-bottom: 0;
+}
+a {
+    color: #14532D;
+    font-weight: 600;
+}
+a:hover {
+    opacity: 0.75;
+}
+footer {
+    padding: 1.5rem 1rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+footer p {
+    margin: 0;
+}
+@media (max-width: 600px) {
+    body {
+        background-attachment: scroll;
+    }
+    header {
+        margin: 1rem;
+    }
+    .site-header h1 {
+        font-size: 2rem;
+    }
+    .tagline {
+        font-size: 1rem;
+    }
+    .header-divider {
+        width: 90%;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.15rem;
+    }
+    main {
+        padding: 0 1rem;
+    }
+    main > section {
+        margin-bottom: 1.75rem;
+    }
+    .about-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+    .about-photo {
+        width: 60%;
+        max-width: 14rem;
+    }
+    .about-text {
+        width: 100%;
+    }
+    .about-text h2 {
+        text-align: center;
+    }
+    .content-box {
+        padding: 1.25rem;
+    }
+    .content-box ul {
+        padding-left: 1.5rem;
+    }
+    .content-box ul ul {
+        padding-left: 1.5rem;
+    }
+}
