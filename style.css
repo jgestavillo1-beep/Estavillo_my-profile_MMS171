@@ -145,7 +145,49 @@ footer {
 footer p {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+}
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #14532D;
+}
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    list-style: none;
+}
+.site-nav a {
+    display: block;
+    padding: 0.35rem 0.6rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+.site-nav a:hover,
+.site-nav a:focus-visible {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+}
 @media (max-width: 600px) {
+    html {
+        scroll-padding-top: 6rem;
+    }
+    .site-nav ul {
+        gap: 0.25rem;
+        padding: 0.5rem;
+    }
+    .site-nav a {
+        font-size: 0.9rem;
+    }
     body {
         background-attachment: scroll;
     }
